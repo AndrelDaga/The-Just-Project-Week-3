@@ -148,6 +148,7 @@ button{
     padding-bottom: 4%;
     padding-left: 4%;
     padding-right: 4%;
+    position: relative;
 }
 
 .a-right > p{
@@ -157,6 +158,48 @@ button{
 .a-right > h2{
     font-size: 40px;
 }
+
+/*projects section slides*/
+.a-h3{
+    font-size: 35px;
+}
+
+.a-right.project{
+    background: #F9FBFF;
+    position: absolute;
+    left: 4%;
+    width: 50%;
+    padding: 3% 2%;
+}
+
+.a-left.p-img{
+    margin-top: 10%;
+    width: 50%;
+    border: none;
+}
+.a-right.project > p, ul{
+    font-size: 24px;
+}
+.a-right.project > ul{
+    padding-left: 5%;
+}
+
+
+
+.container.projects{
+    margin-top: 2%;
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-left: 4%;
+    padding-right: 4%;
+    
+}
+
+
 
 /*footer styles*/
 .container.footer-c{
