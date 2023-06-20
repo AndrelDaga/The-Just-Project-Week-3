@@ -65,6 +65,9 @@ nav>ul {
     align-items: center;
 }
 
+.hamburger{
+    display: none;
+}
 /*hero styles*/
 .container.hero {
     margin-top: 2%;
@@ -214,6 +217,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     padding-left: 4%;
     padding-right: 4%;
     margin-bottom: 1%;
@@ -276,12 +280,12 @@ ul {
 
     }
 
-    nav{
+    nav {
         display: none;
     }
 
     #logo>h3 {
-        font-size: 24px;
+        font-size: 20px;
         color: #155EEF;
         font-family: 'Manrope', sans-serif;
         font-weight: 700;
@@ -290,6 +294,12 @@ ul {
     #logo {
         display: flex;
         align-items: center;
+        justify-content: flex-start;
+        margin-right: auto;
+    }
+
+    .hamburger{
+        display: inline;
     }
 
     /*hero responsive*/
@@ -398,6 +408,30 @@ ul {
     .container.projects {
         display: none;
 
+    }
+
+    /*footer styles*/
+    .container.footer-c {
+        margin-top: 2%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-left: 4%;
+        padding-right: 4%;
+        margin-bottom: 1%;
+    }
+
+    .socials {
+        display: flex;
+        width: 30%;
+        /* border: 1px solid red; */
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .copyright p{
+        font-size: 16px;
     }
 
 
