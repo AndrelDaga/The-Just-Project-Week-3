@@ -1,22 +1,24 @@
-*{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
-body{
+
+body {
     height: 100vh;
-    color:#2E3A53;
+    color: #2E3A53;
     font-family: 'Manrope', sans-serif;
 }
 
 /*Header styles*/
-.container{
+.container {
     border: 2px solid blue;
     width: 90%;
     margin: auto auto;
     border-radius: 8px;
 }
 
-.container.nav-bar{
+.container.nav-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,43 +29,44 @@ body{
     /* padding: 1% 2%; */
 }
 
-nav{
+nav {
     width: 40%;
     /* border: 1px solid blue; */
 }
-nav > ul{
+
+nav>ul {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
     align-items: center;
     font-size: 24px;
-    
+
 }
 
-#hire{
+#hire {
     border: 2px solid blue;
     padding: 1% 2%;
     border-radius: 8px;
     width: auto;
     height: 1%;
-    color:#155EEF;
+    color: #155EEF;
 
 }
 
-#logo > h3{
+#logo>h3 {
     font-size: 32px;
     color: #155EEF;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
 }
 
-#logo{
+#logo {
     display: flex;
     align-items: center;
 }
 
 /*hero styles*/
-.container.hero{
+.container.hero {
     margin-top: 2%;
     height: 10%;
     display: flex;
@@ -75,17 +78,17 @@ nav > ul{
     padding-right: 4%;
 }
 
-.right{
+.right {
     /* border: 1px solid red; */
     width: 40%;
 }
 
-.left{
+.left {
     /* border: 1px solid red; */
     width: 50%;
 }
 
-.left > h2{
+.left>h2 {
     color: #155EEF;
     font-size: 56px;
     margin-bottom: 4%;
@@ -93,26 +96,26 @@ nav > ul{
     font-weight: bold;
 }
 
-.left > p{
+.left>p {
     color: #2E3A53;
     font-size: 24px;
     margin-bottom: 6%;
 }
 
-.left > span{
+.left>span {
     color: #2E3A53;
     font-size: 24px;
     margin-top: 3%;
     font-weight: medium;
 }
 
-.right > img{
+.right>img {
     height: auto;
     width: 80%;
 }
 
 
-button{
+button {
     padding: 2% 3%;
     background: #155EEF;
     border-radius: 8px;
@@ -121,19 +124,19 @@ button{
 }
 
 /*the about me section*/
-.a-left > img{
+.a-left>img {
     height: auto;
     width: 100%;
 }
 
-.a-left{
+.a-left {
     width: 40%;
     border: 1px solid blue;
     text-align: center;
     margin-right: 3%;
 }
 
-.a-right{
+.a-right {
     width: 55%;
     /* border: 1px solid blue; */
     display: flex;
@@ -141,9 +144,10 @@ button{
     justify-content: center;
 }
 
-.container.about{
+.container.about {
     margin-top: 2%;
     display: flex;
+    align-items: center;
     padding-top: 4%;
     padding-bottom: 4%;
     padding-left: 4%;
@@ -151,20 +155,20 @@ button{
     position: relative;
 }
 
-.a-right > p{
+.a-right>p {
     font-size: 24px;
 }
 
-.a-right > h2{
+.a-right>h2 {
     font-size: 40px;
 }
 
 /*projects section slides*/
-.a-h3{
+.a-h3 {
     font-size: 35px;
 }
 
-.a-right.project{
+.a-right.project {
     background: #F9FBFF;
     position: absolute;
     left: 4%;
@@ -172,21 +176,24 @@ button{
     padding: 3% 2%;
 }
 
-.a-left.p-img{
+.a-left.p-img {
     margin-top: 10%;
     width: 50%;
     border: none;
 }
-.a-right.project > p, ul{
+
+.a-right.project>p,
+ul {
     font-size: 24px;
 }
-.a-right.project > ul{
+
+.a-right.project>ul {
     padding-left: 5%;
 }
 
 
 
-.container.projects{
+.container.projects {
     margin-top: 2%;
     position: relative;
     height: auto;
@@ -196,13 +203,13 @@ button{
     padding-bottom: 4%;
     padding-left: 4%;
     padding-right: 4%;
-    
+
 }
 
 
 
 /*footer styles*/
-.container.footer-c{
+.container.footer-c {
     margin-top: 2%;
     display: flex;
     justify-content: space-between;
@@ -212,10 +219,187 @@ button{
     margin-bottom: 1%;
 }
 
-.socials{
+.socials {
     display: flex;
     width: 10%;
     /* border: 1px solid red; */
     justify-content: space-around;
     align-items: center;
+}
+
+/********************************************************RESPONSIVE STYLING****************************************************/
+/********************************************************RESPONSIVE STYLING****************************************************/
+/********************************************************RESPONSIVE STYLING****************************************************/
+
+@media screen and (min-width: 375px) and (max-width: 412px) {
+
+    /*Header styles*/
+    .container {
+        border: 2px solid blue;
+        width: 90%;
+        margin: auto auto;
+        border-radius: 8px;
+    }
+
+    .container.nav-bar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1%;
+        padding-left: 4%;
+        padding-right: 4%;
+        height: 5%;
+        /* padding: 1% 2%; */
+    }
+
+    nav {
+        width: 40%;
+        /* border: 1px solid blue; */
+    }
+
+    nav>ul {
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        align-items: center;
+        font-size: 24px;
+
+    }
+
+    #hire {
+        border: 2px solid blue;
+        padding: 1% 2%;
+        border-radius: 8px;
+        width: auto;
+        height: 1%;
+        color: #155EEF;
+
+    }
+
+    nav{
+        display: none;
+    }
+
+    #logo>h3 {
+        font-size: 24px;
+        color: #155EEF;
+        font-family: 'Manrope', sans-serif;
+        font-weight: 700;
+    }
+
+    #logo {
+        display: flex;
+        align-items: center;
+    }
+
+    /*hero responsive*/
+    .container.hero {
+        margin-top: 2%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background: #F9FBFF;
+        /* border: 1px solid red; */
+        align-items: center;
+        text-align: center;
+    }
+
+    .right {
+        width: 95%;
+        margin-top: 8%;
+        /* border: 1px solid black; */
+    }
+
+    .left {
+        width: 95%;
+        /* border: 1px solid black; */
+
+    }
+
+
+    .left>h2 {
+        color: #155EEF;
+        font-size: 32px;
+        margin-bottom: 4%;
+        font-family: 'Halant', serif;
+        font-weight: bold;
+    }
+
+    .left>p {
+        color: #2E3A53;
+        font-size: 16px;
+        margin-bottom: 6%;
+    }
+
+    .left>span {
+        color: #2E3A53;
+        font-size: 16px;
+        margin-top: 3%;
+        font-weight: medium;
+    }
+
+    .right>img {
+        height: auto;
+        width: 80%;
+    }
+
+
+    button {
+        padding: 2% 3%;
+        background: #155EEF;
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        width: 100%;
+    }
+
+
+    /*the about me section*/
+    .a-left>img {
+        height: auto;
+        width: 100%;
+    }
+
+    .a-left {
+        width: 95%;
+        border: 1px solid blue;
+        text-align: center;
+        margin-top: 5%;
+
+    }
+
+    .a-right {
+        width: 95%;
+        /* border: 1px solid blue; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container.about {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        position: relative;
+    }
+
+    .a-right>p {
+        font-size: 16px;
+        margin-top: 3%;
+    }
+
+    .a-right>h2 {
+        font-size: 24px;
+    }
+
+    /*projects section display none*/
+    .container.projects {
+        display: none;
+
+    }
+
+
+
 }
